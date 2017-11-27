@@ -12,7 +12,7 @@ $(function() {
         methods: {
             loadFilms() {
                 this.loading = true
-                this.$http.get('https://ghibliapi.herokuapp.com')
+                this.$http.get('https://ghibliapi.herokuapp.com/films')
                     .then(resp => {
                         this.films = resp.body
                         this.loading = false

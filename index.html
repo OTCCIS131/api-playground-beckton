@@ -30,7 +30,7 @@
                 <button class="btn btn-primary" :disabled="loading" @click="loadFilms">
                     <i class="fa fa-spinner fa-spin" v-if="loading"></i>
                     Load Films
-                </button>
+                </button> 
                 <ul class="list-group" v-if="showing == 'films'">
                     <li class="list-group-item" v-for="film in films" :key="film.id" @click="selectFilm(film)">
                         {{ film.title }} ({{ film.release_date }}) - {{ film.people.length }} People

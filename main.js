@@ -10,7 +10,7 @@ $(function() {
             people: []
         },
         methods: {
-            loadFilms() {
+            loadFilms() { 
                 this.loading = true
                 this.$http.get('https://ghibliapi.herokuapp.com/films')
                     .then(resp => {

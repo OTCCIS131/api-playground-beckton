@@ -20,13 +20,6 @@ $(function() {
                         this.breeds = resp.body.message
                         this.loading = false
                     })
-            },
-            loadBreedImages(breed) {
-                this.$http.get('https://dog.ceo/api/breed/' + breed + '/images')
-                .then(resp => {                    
-                    this.images = resp.body.message
-                    this.showing = 'images'
-                })
             }
         }
     })

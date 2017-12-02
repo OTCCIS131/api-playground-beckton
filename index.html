@@ -22,25 +22,21 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->           
-
+        <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
         <div class="container-fluid">
             <div id="app">
                 <button class="btn btn-primary" :disabled="loading" @click="loadBreeds">
                     <i class="fa fa-spinner fa-spin" v-if="loading"></i>
-                    Load Breeds
+                    Load Dog Breeds
                 </button>
                 <ul class="breed-list" v-if="showing == 'breeds'">
                     <li class="breed-list-item" v-for="breed in breeds">
-                        <button class="btn btn-secondary" :disabled="loading" @click="loadBreedImages(breed)">
-                            {{ breed | capitalize }} Photos
-                        </button>
-                    </li>
-                </ul>
-                <ul class="breed-photo" v-if="showing == 'images'">
-                    <li class="breed-photo-item" v-for="image in images" :key="images">
-                        <img href="'images'"/>
+                        <!-- <button class="btn btn-secondary" :disabled="loading"> -->
+                        {{ breed | capitalize }} Breed
+                        <!-- </button> -->
                     </li>
                 </ul>
             </div>

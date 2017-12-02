@@ -1,0 +1,16 @@
+body {
+    padding-top: 5vw;
+    padding-left: 5vw;
+    background-color: lightblue;
+
+}
+.breed-list {
+    padding-left: 30vw;
+    padding-bottom: 40vw;
+    font-family: Consolas, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: darkblue;
+}
+button {
+    font-family: Consolas, 'Times New Roman', Times, serif;
+}
